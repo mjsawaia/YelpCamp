@@ -1,0 +1,40 @@
+<% layout('/layouts/boilerplate') %>
+
+<div class="container">
+    <div class="card col-md-6 offset-md-3 col-xl-4 offset-xl-4 shadow">
+        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            class="card-img-top" alt="camping photo">
+        <div class="card-body">
+            <h5 class="card-title">Sign Up</h5>
+            <form action="/register" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" autofocus required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
